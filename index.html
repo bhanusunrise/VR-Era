@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Login | VR Era</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/loginBg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #dc3545;
+            padding: 20px;
+            color: #fff;
+            border-radius: 30px;
+        }
+
+        .form-container a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .rount-button{
+            border-radius: 10%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <h2 class="text-center">&nbsp &nbsp &nbsp VR Era | Login &nbsp &nbsp &nbsp</h2>
+                <div class="form-group">
+                    <label for="name" class="text-white">Name:</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="password" class="text-white">Password:</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="form-group">
+                    <div class="text-center">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="text-center">
+                        <a href="#">Get Registered</a>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-light round-btn" onclick="clearFields()" >&nbsp &nbsp Clear &nbsp &nbsp</button>
+                    </div>
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-light round-btn">&nbsp &nbsp Login &nbsp &nbsp</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--Include javascript-->
+    <script>
+        function clearFields() {
+            document.getElementById("name").value = "";
+            document.getElementById("password").value = "";
+        }
+    </script>
+
+</body>
+
+</html>
